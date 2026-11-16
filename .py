@@ -1,6 +1,6 @@
-Sum = 0
-for i in range(1,101):
-    if (i % 2 == 0):
-        Sum += i
+n = int(input("Enter the number: "))
+fact = 1
+for i in range(1, n + 1):
+    fact *= i
 
-print(Sum)
+print(fact)
