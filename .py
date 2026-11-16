@@ -1,6 +1,9 @@
-n = int(input("Enter the number: "))
-fact = 1
-for i in range(1, n + 1):
-    fact *= i
+n = int(input("Enter: "))
+reverse = 0
 
-print(fact)
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n = n // 10
+
+print("Reverse number= ", reverse)
