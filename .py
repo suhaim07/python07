@@ -1,8 +1,13 @@
-count = 0
-n = int(input("Enter : "))
+reverse = 0
+n = 123214
+original = n
 
 while n > 0:
     digit = n % 10
-    count += digit
-    n = n//10
-print(count)
+    reverse = reverse * 10 + digit
+    n = n // 10
+
+if (original == reverse):
+    print("palindrome")
+else:
+    print("not palindrome")
