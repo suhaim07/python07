@@ -1,9 +1,9 @@
-n = int(input("Enter: "))
-reverse = 0
+count = 0
+n = int(input("Enter : "))
 
 while n > 0:
     digit = n % 10
-    reverse = reverse * 10 + digit
+    count += 1
     n = n // 10
 
-print("Reverse number= ", reverse)
+print(count) 
