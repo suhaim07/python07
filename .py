@@ -1,13 +1,6 @@
-reverse = 0
-n = 123214
-original = n
+import numpy as np
+arr = np.array(5)
 
-while n > 0:
-    digit = n % 10
-    reverse = reverse * 10 + digit
-    n = n // 10
+arr = [1,2,3,4,5]
 
-if (original == reverse):
-    print("palindrome")
-else:
-    print("not palindrome")
+print(arr)
