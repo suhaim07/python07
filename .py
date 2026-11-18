@@ -1,6 +1,18 @@
-import numpy as np
-arr = np.array(5)
+def is_prime(number):
+    if number < 2:
+        return False
 
-arr = [1,2,3,4,5]
+    divisor = 2
+    while divisor * divisor <= number:
+        if number % divisor == 0:
+            return False
+        divisor += 1
 
-print(arr)
+    return True
+
+
+number = int(input("Enter a number: "))
+if is_prime(number):
+    print("Prime number")
+else:
+    print("Not a prime number")
