@@ -1,16 +1,4 @@
-def is_prime(number):
-    if number < 2:
-        return False
+number = int(input("Enter a number: "))
+largest_digit = max(str(abs(number)))
 
-    divisor = 2
-    while divisor * divisor <= number:
-        if number % divisor == 0:
-            return False
-        divisor += 1
-
-    return True
-
-
-for number in range(1, 101):
-    if is_prime(number):
-        print(number)
+print(largest_digit)
