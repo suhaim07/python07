@@ -11,8 +11,6 @@ def is_prime(number):
     return True
 
 
-number = int(input("Enter a number: "))
-if is_prime(number):
-    print("Prime number")
-else:
-    print("Not a prime number")
+for number in range(1, 101):
+    if is_prime(number):
+        print(number)
