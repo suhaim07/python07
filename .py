@@ -1,11 +1,7 @@
-terms = int(input("How many terms? "))
-first = 0
-second = 1
+numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
+unique_numbers = sorted(set(numbers))
 
-if terms <= 0:
-    print("Enter a positive number of terms.")
+if len(unique_numbers) < 2:
+    print("The list must contain at least two distinct numbers.")
 else:
-    for _ in range(terms):
-        print(first, end=" ")
-        first, second = second, first + second
-    print()
+    print("Second largest number:", unique_numbers[-2])
