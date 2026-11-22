@@ -1,7 +1,11 @@
-numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
-unique_numbers = sorted(set(numbers))
+n = 12345
+largest = 0
 
-if len(unique_numbers) < 2:
-    print("The list must contain at least two distinct numbers.")
-else:
-    print("Second largest number:", unique_numbers[-2])
+while n > 0:
+    digit = n % 10
+    if (digit > largest):
+        largest = digit
+
+    n = n // 10
+
+print(largest)
