@@ -1,11 +1,7 @@
-n = 12345
-largest = 0
+n = int(input("Enter the number of Fibonacci terms: "))
 
-while n > 0:
-    digit = n % 10
-    if (digit > largest):
-        largest = digit
+a, b = 0, 1
 
-    n = n // 10
-
-print(largest)
+for _ in range(n):
+    print(a)
+    a, b = b, a + b
