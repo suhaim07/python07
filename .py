@@ -1,10 +1,4 @@
-n = int(input("Enter the number of Fibonacci terms: "))
+n = [1, 1, 1, 2, 3, 2, 4, 3, 5, 6, 5]
 
-a, b = 0, 1
-count = 0
-
-while count < n:
-    print(a)
-    a, b = b, a + b
-    count += 1
-    
+for number in set(n):
+    print(number, 'occurs', n.count(number), 'times')
