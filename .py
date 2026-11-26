@@ -1,8 +1,11 @@
-for num in range(2,101):
-    prime = True
-    for i in range(2, num):
-        if num % i == 0:
-            prime = False
-            break
-    if prime:
-        print(num)
+def third_largest(numbers):
+    distinct = sorted(set(numbers), reverse=True)
+
+    if len(distinct) < 3:
+        raise ValueError("List needs at least three distinct numbers")
+
+    return distinct[2]
+
+
+values = [10, 20, 4, 45, 99]
+print(third_largest(values))
